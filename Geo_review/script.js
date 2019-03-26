@@ -65,7 +65,7 @@ function initMap(){
     function createPlacemark(coords, address, zoomLevel) {
         const id = createUUID();
         const placemark = new ymaps.Placemark(coords, {
-            iconCaption: 'поиск...',
+            iconCaption: 'address...',
             balloonContentHeader: createBalloonHeader(address),
             balloonContentBody: createBalloonBody({id:id}),
             balloonContentFooter: '',
